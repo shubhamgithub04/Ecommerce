@@ -24,4 +24,12 @@
     <%= movie.rating %>
   </p>
 
+  <p>
+  <% if movie.image.present? %>
+  <%= image_tag(movie.image, style: "height: 400px; width: 350px;") %>
+<% end %>
+
+  </p>
+
+
 </div>
