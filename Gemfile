@@ -42,6 +42,8 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 
 gem 'devise', '~> 4.9', '>= 4.9.3'
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+gem 'sassc', '~> 2.4'
 
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
