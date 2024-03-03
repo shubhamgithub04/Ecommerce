@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Movie:</strong>
+  <%= @movie_show.movie_id %>
+</p>
+
+<p>
+  <strong>Show Date:</strong>
+  <%= @movie_show.show_date.to_date %>
+</p>
+
+<p>
+  <strong>Show Slot:</strong>
+  <%= @movie_show.show_slot.reject(&:empty?).join(' / ') %>
+</p>
+
+<%= link_to 'Edit', edit_show_path(@movie_show) %> |
+<%= link_to 'Back', shows_path %>
